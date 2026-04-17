@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo Card</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <!-- Todo Card -->
+  <div class="todo-card">
+
+    <div class="header">
+      <h2 class="todo-title">Finish Flutter Project</h2>
+      <span class="priority high" id="priorityDisplay">High Priority</span>
+    </div>
+
+    <p class="description">
+      Complete UI design and test all pages before submission.
+    </p>
+
+    <div class="dates">
+      <p id="dateDisplay">Due: April 20, 2026</p>
+      <p>Due in 4 days</p>
+    </div>
+
+    <div class="tags">
+      <span>Work</span>
+      <span>Urgent</span>
+      <span class="status-badge" id="statusBadge">Pending</span>
+    </div>
+
+    <div class="actions">
+      <button class="edit-btn">Edit</button>
+      <button class="delete-btn">Delete</button>
+    </div>
+
+    <div class="checkbox-area">
+      <input type="checkbox" id="completeTask">
+      <label for="completeTask">Mark as complete</label>
+    </div>
+  </div>
+
+  <!-- Hidden Edit Form -->
+  <div class="edit-form hidden" id="editForm">
+    <label>Title</label>
+    <input type="text" id="editTitle">
+
+    <label>Description</label>
+    <textarea id="editDescription"></textarea>
+
+    <label>Priority-type</label>
+    <select id="editPriority">
+      <option>Low Priority</option>
+      <option>Medium Priority</option>
+      <option>High Priority</option>
+    </select>
+
+    <label>Due date</label>
+    <input type="date" id="editDate">
+
+    <div class="form-buttons">
+      <button id="saveBtn">Save</button>
+      <button id="cancelBtn">Cancel</button>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>

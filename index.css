@@ -1,0 +1,111 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #eee;
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+  margin: 0;
+}
+
+.todo-card, .edit-form {
+  background: white;
+  width: 350px;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todo-title {
+  font-size: 22px;
+  margin: 0;
+}
+
+.priority {
+  padding: 6px 12px;
+  border-radius: 8px;
+  background: #ffd6d6;
+  color: darkred;
+}
+
+.description {
+  margin: 20px 0;
+  color: #555;
+}
+
+.dates {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tags span {
+  background: #e6e6fa;
+  padding: 5px 10px;
+  border-radius: 8px;
+  margin-right: 5px;
+}
+
+.status-badge {
+  background: #f7dede;
+  color: darkred;
+}
+
+.actions {
+  margin-top: 20px;
+}
+
+.actions button,
+.form-buttons button {
+  padding: 10px 18px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #2d2d85;
+  color: white;
+  cursor: pointer;
+}
+
+.checkbox-area {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.edit-form input,
+.edit-form textarea,
+.edit-form select {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+
+.hidden {
+  display: none;
+}
+.status-select {
+  padding: 5px 10px;
+  border-radius: 6px;
+  border: 1px solid #999;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.task-status {
+  display: inline-block;
+  margin-left: 10px;
+  padding: 5px 10px;
+  border-radius: 6px;
+  background: #6c63ff;
+  color: white;
+  font-size: 14px;
+}
