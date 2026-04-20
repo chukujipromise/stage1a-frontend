@@ -50,4 +50,25 @@
     <input type="text" id="editTitle" data-testid="test-todo-edit-title-input">
 
     <label for="editDescription">Description</label>
-    <textarea id="editDescription" data-testid="test-todo-edit-description-input"><
+    <textarea id="editDescription" data-testid="test-todo-edit-description-input"></textarea>
+
+    <label for="editPriority">Priority-type</label>
+    <select id="editPriority" data-testid="test-todo-edit-priority-input">
+      <option>Low Priority</option>
+      <option>Medium Priority</option>
+      <option>High Priority</option>
+    </select>
+
+    <label for="editDate">Due date</label>
+    <input type="date" id="editDate" data-testid="test-todo-edit-date-input">
+
+    <div class="form-buttons">
+      <button id="saveBtn" data-testid="test-todo-edit-save-btn">Save</button>
+      <button id="cancelBtn" data-testid="test-todo-edit-cancel-btn">Cancel</button>
+    </div>
+
+  </div>
+
+  <script src="index.js"></script>
+</body>
+  </html>
