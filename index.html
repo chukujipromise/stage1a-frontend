@@ -9,63 +9,45 @@
 <body>
 
   <!-- Todo Card -->
-  <div class="todo-card">
+  <div class="todo-card" data-testid="test-todo-card">
 
     <div class="header">
-      <h2 class="todo-title">Finish Flutter Project</h2>
-      <span class="priority high" id="priorityDisplay">High Priority</span>
+      <h2 class="todo-title" data-testid="test-todo-title">Finish Flutter Project</h2>
+      <span class="priority high" id="priorityDisplay" data-testid="test-todo-priority">High Priority</span>
     </div>
 
-    <p class="description">
+    <p class="description" data-testid="test-todo-description">
       Complete UI design and test all pages before submission.
     </p>
 
     <div class="dates">
-      <p id="dateDisplay">Due: April 20, 2026</p>
+      <p id="dateDisplay" data-testid="test-todo-date">Due: April 20, 2026</p>
       <p>Due in 4 days</p>
     </div>
 
-    <div class="tags">
+    <div class="tags" data-testid="test-todo-tags">
       <span>Work</span>
       <span>Urgent</span>
-      <span class="status-badge" id="statusBadge">Pending</span>
+      <span class="status-badge" id="statusBadge" data-testid="test-todo-status">Pending</span>
     </div>
 
     <div class="actions">
-      <button class="edit-btn">Edit</button>
-      <button class="delete-btn">Delete</button>
+      <button class="edit-btn" data-testid="test-todo-edit-btn">Edit</button>
+      <button class="delete-btn" data-testid="test-todo-delete-btn">Delete</button>
     </div>
 
     <div class="checkbox-area">
-      <input type="checkbox" id="completeTask">
+      <input type="checkbox" id="completeTask" data-testid="test-todo-complete-checkbox">
       <label for="completeTask">Mark as complete</label>
     </div>
+
   </div>
 
   <!-- Hidden Edit Form -->
-  <div class="edit-form hidden" id="editForm">
-    <label>Title</label>
-    <input type="text" id="editTitle">
+  <div class="edit-form hidden" id="editForm" data-testid="test-todo-edit-form">
 
-    <label>Description</label>
-    <textarea id="editDescription"></textarea>
+    <label for="editTitle">Title</label>
+    <input type="text" id="editTitle" data-testid="test-todo-edit-title-input">
 
-    <label>Priority-type</label>
-    <select id="editPriority">
-      <option>Low Priority</option>
-      <option>Medium Priority</option>
-      <option>High Priority</option>
-    </select>
-
-    <label>Due date</label>
-    <input type="date" id="editDate">
-
-    <div class="form-buttons">
-      <button id="saveBtn">Save</button>
-      <button id="cancelBtn">Cancel</button>
-    </div>
-  </div>
-
-  <script src="index.js"></script>
-</body>
-</html>
+    <label for="editDescription">Description</label>
+    <textarea id="editDescription" data-testid="test-todo-edit-description-input"><
